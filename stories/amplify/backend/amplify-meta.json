@@ -1,0 +1,57 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-authentication-staging-161046-authRole",
+      "UnauthRoleArn": "arn:aws:iam::901486195802:role/amplify-authentication-staging-161046-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::901486195802:role/amplify-authentication-staging-161046-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-authentication-staging-161046-deployment",
+      "UnauthRoleName": "amplify-authentication-staging-161046-unauthRole",
+      "StackName": "amplify-authentication-staging-161046",
+      "StackId": "arn:aws:cloudformation:eu-north-1:901486195802:stack/amplify-authentication-staging-161046/af623640-0df2-11ee-b07c-0a2b54e3032e",
+      "AmplifyAppId": "d1n6yeugxw5mpk"
+    }
+  },
+  "auth": {
+    "Authentication": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL",
+          "NAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 7,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-authentication-staging-161046-deployment/amplify-cfn-templates/auth/Authentication-cloudformation-template.json",
+        "logicalId": "authAuthentication"
+      },
+      "lastPushTimeStamp": "2023-06-18T17:58:59.833Z",
+      "output": {
+        "UserPoolId": "eu-north-1_uuW5H3fAe",
+        "AppClientIDWeb": "2tv6d1q4r8jqvohai8ikmfucv2",
+        "AppClientID": "49srgdmr26n91l2u3ng4bfr7lf",
+        "IdentityPoolId": "eu-north-1:664f5ec6-8946-4f75-8ae3-e1d34e241c4b",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:901486195802:userpool/eu-north-1_uuW5H3fAe",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "Authentication"
+      },
+      "lastPushDirHash": "RsCw5jqysSnr4JNM1mNfcyR1PeY="
+    }
+  }
+}
